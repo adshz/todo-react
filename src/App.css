@@ -8,9 +8,9 @@ body {
 	padding: 50px;
 	color: #f7f7f7;
 	min-height: 100vh;
-	background: #252525;
+	background: #1a1a2e;
 	text-rendering: optimizeSpeed;
-	font-family: "Roboto", sans-serif;
+	font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", "Cascadia Code", Consolas, monospace;
 }
 
 .App {
@@ -18,14 +18,14 @@ body {
 	max-width: 600px;
 	margin: 0 auto;
 	text-align: center;
-	background: #333;
+	background: #16213e;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
 	border-radius: 8px;
 }
 
 h1 {
   font-weight: 300;
-  color: #44c0b6;
+  color: #00fff5;
   font-size: 2.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -64,8 +64,8 @@ button {
   font-weight: 400;
   letter-spacing: 0.1rem;
   transition: all 0.3s ease;
-  background: #333;
-  border: 1px solid #44c0b6;
+  background: #16213e;
+  border: 1px solid #00fff5;
   border-radius: 4px;
 }
 
@@ -79,7 +79,7 @@ button {
 }
 
 .add-button {
-  color: #44c0b6;
+  color: #00fff5;
   width: auto;
   min-width: 100px;
   padding: 10px 20px;
@@ -88,20 +88,32 @@ button {
 }
 
 .add-button:hover {
-  background: #44c0b6;
-  color: white;
+  background: #00fff5;
+  color: #16213e;
 }
 
 .delete-button {
-  color: #fe6a6a;
-  border-color: #fe6a6a;
-  border-radius: 4px;
-  margin-left: 10px;
+  color: #ff2e63;
+  border: 2px solid #ff2e63;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
 }
 
 .delete-button:hover {
-  background: #fe6a6a;
+  background: #ff2e63;
   color: white;
+  box-shadow: 0 0 15px rgba(255, 46, 99, 0.4);
+  transform: translateY(-1px);
+}
+
+.delete-button:active {
+  transform: translateY(0px);
+  box-shadow: 0 0 5px rgba(255, 46, 99, 0.4);
 }
 
 ul {
@@ -115,10 +127,10 @@ li {
   padding: 0.85em;
   text-align: left;
   margin-bottom: 0.5rem;
-  background: #494847;
+  background: #233049;
   letter-spacing: 0.02rem;
   transition: all 0.3s ease-out;
-  border-left: 5px solid #cf972e;
+  border-left: 5px solid #ffd700;
   border-radius: 0 4px 4px 0;
   word-break: break-word;
 }
@@ -130,6 +142,6 @@ li:last-child {
 .empty {
   font-size: 20px;
   font-weight: 400;
-  color: #cf972e;
+  color: #ffd700;
   letter-spacing: 0.2rem;
 }
